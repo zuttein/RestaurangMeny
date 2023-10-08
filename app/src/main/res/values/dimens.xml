@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimensions_width_images">110dp</dimen>
+    <dimen name="dimensions_height_images">110dp</dimen>
+    <dimen name="textsize_description">12sp</dimen>
+    <dimen name="dimensions_height_desciption">45dp</dimen>
+    <dimen name="textsize_titel">33sp</dimen>
+    <dimen name="textsize_btn">16sp</dimen>
+    <dimen name="btn1_witdh">110dp</dimen>
+    <dimen name="btn1_height">60dp</dimen>
+    <dimen name="btn2_width">130dp</dimen>
+    <dimen name="btn2_height">60dp</dimen>
+    <dimen name="btn3_width">120dp</dimen>
+    <dimen name="btn3_height">60dp</dimen>
+</resources>

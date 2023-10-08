@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+    <!-- Restaurangnamn -->
+
+    <TextView
+        android:id="@+id/text_restaurangnamn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/restaurang_namn"
+        android:textSize="@dimen/textsize_titel"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.018"
+        android:shadowColor="@color/white"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+
+
+        />
+
+    <!-- Knappar till samtliga kategorier-->
+    <Button
+        android:id="@+id/btn_förätter"
+        android:layout_width="@dimen/btn1_witdh"
+        android:layout_height="@dimen/btn1_height"
+        android:layout_weight="1"
+        android:text="@string/förätt_btn"
+        android:textSize="@dimen/textsize_btn"
+        android:backgroundTint="@color/red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/btn_varmrätter"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.134"
+        />
+
+    <Button
+        android:id="@+id/btn_varmrätter"
+        android:layout_width="@dimen/btn2_width"
+        android:layout_height="@dimen/btn2_height"
+        android:layout_marginEnd="5dp"
+        android:layout_weight="1"
+        android:text="@string/varmrätt_btn"
+        android:textSize="@dimen/textsize_btn"
+
+        android:backgroundTint="@color/red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_efterrätter"
+        app:layout_constraintHorizontal_bias="0.976"
+        app:layout_constraintStart_toStartOf="@id/btn_förätter"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.134" />
+
+    <Button
+        android:id="@+id/btn_efterrätter"
+        android:layout_width="@dimen/btn3_width"
+        android:layout_height="@dimen/btn3_height"
+        android:layout_weight="1"
+        android:text="@string/efterrätt_btn"
+        android:textSize="@dimen/textsize_btn"
+        android:backgroundTint="@color/red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="@id/btn_varmrätter"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.134" />
+
+    <!-- Namn på alla rätter -->
+    <TextView
+        android:id="@+id/show_förätt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowRadius="2"
+        android:text="@string/förätt1_namn"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.039"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.236" />
+
+
+    <TextView
+        android:id="@+id/show_förätt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="61dp"
+        android:text="@string/förätt2_namn"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/show_förätt1"
+        app:layout_constraintVertical_bias="0.206" />
+
+    <TextView
+        android:id="@+id/show_förätt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="101dp"
+        android:text="@string/förätt3_namn"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/show_förätt2"
+        app:layout_constraintVertical_bias="0.207" />
+
+    <TextView
+        android:id="@+id/show_varmrätt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/varmrätt1_namn"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_varmrätter" />
+
+    <TextView
+        android:id="@+id/show_varmrätt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="168dp"
+        android:shadowRadius="2"
+        android:text="@string/varmrätt2_namn"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/show_varmrätt1" />
+
+    <TextView
+        android:id="@+id/show_varmrätt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="148dp"
+        android:shadowRadius="2"
+        android:text="@string/varmrätt3_namn"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/show_varmrätt2" />
+
+    <TextView
+        android:id="@+id/show_efterrätt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:shadowRadius="2"
+        android:text="@string/efterrätt1_namn"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.837"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_efterrätter" />
+
+    <TextView
+        android:id="@+id/show_efterrätt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="356dp"
+        android:text="@string/efterrätt2_namn"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.819"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/show_efterrätt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="164dp"
+        android:text="@string/efterätt3_namn"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/show_efterrätt2" />
+
+    <!-- Bilder på alla rätter -->
+
+    <ImageView
+        android:id="@+id/förätt1_bild"
+        android:layout_width="@dimen/dimensions_width_images"
+        android:layout_height="@dimen/dimensions_height_images"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.039"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.301"
+        app:srcCompat="@drawable/skagen" />
+
+    <ImageView
+        android:id="@+id/förätt2_bild"
+        android:layout_width="@dimen/dimensions_width_images"
+        android:layout_height="@dimen/dimensions_height_images"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.595"
+        app:srcCompat="@drawable/svampsoppa" />
+
+    <ImageView
+        android:id="@+id/förätt3_bild"
+        android:layout_width="@dimen/dimensions_width_images"
+        android:layout_height="@dimen/dimensions_height_images"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="154dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.884"
+        app:srcCompat="@drawable/r_raka" />
+
+    <ImageView
+        android:id="@+id/varmrätt1_bild"
+        android:layout_width="@dimen/dimensions_width_images"
+        android:layout_height="@dimen/dimensions_height_images"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.301"
+        app:srcCompat="@drawable/k_ttbullar" />
+
+    <ImageView
+        android:id="@+id/varmrätt2_bild"
+        android:layout_width="@dimen/dimensions_width_images"
+        android:layout_height="@dimen/dimensions_height_images"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.589"
+        app:srcCompat="@drawable/ugnsbakad_roding_med_purjolok_och_vitvinssas" />
+
+    <ImageView
+        android:id="@+id/varmrätt3_bild"
+        android:layout_width="@dimen/dimensions_width_images"
+        android:layout_height="@dimen/dimensions_height_images"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.884"
+        app:srcCompat="@drawable/wallenbergare" />
+
+    <ImageView
+        android:id="@+id/efterrätt1_bild"
+        android:layout_width="@dimen/dimensions_width_images"
+        android:layout_height="@dimen/dimensions_height_images"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.895"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.301"
+        app:srcCompat="@drawable/pannacotta" />
+
+    <ImageView
+        android:id="@+id/efterrätt2_bild"
+        android:layout_width="@dimen/dimensions_width_images"
+        android:layout_height="@dimen/dimensions_height_images"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.594"
+        app:srcCompat="@drawable/knackig_appelpaj_med_vaniljsas" />
+
+    <ImageView
+        android:id="@+id/efterrätt3_bild"
+        android:layout_width="@dimen/dimensions_width_images"
+        android:layout_height="@dimen/dimensions_height_images"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.882"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.884"
+        app:srcCompat="@drawable/marangsviss_med_dajm_och_jordgubbar_2_800x800" />
+
+    <!-- Beskrivning av alla rätter -->
+
+    <TextView
+        android:id="@+id/förätt1_beskriving"
+        android:layout_width="@dimen/dimensions_width_images"
+        android:layout_height="@dimen/dimensions_height_desciption"
+        android:text="@string/förätt1_beskrivning"
+        android:textColor="@color/red"
+        android:textSize="@dimen/textsize_description"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.029"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.429" />
+
+    <TextView
+        android:id="@+id/förätt2_beskrivning"
+        android:layout_width="@dimen/dimensions_width_images"
+        android:layout_height="@dimen/dimensions_height_desciption"
+        android:text="@string/förätt2_beskrivning"
+        android:textColor="@color/red"
+        android:textSize="@dimen/textsize_description"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.701" />
+
+    <TextView
+        android:id="@+id/förätt3_beskriving"
+        android:layout_width="@dimen/dimensions_width_images"
+        android:layout_height="@dimen/dimensions_height_desciption"
+        android:text="@string/förätt3_beskrivning"
+        android:textSize="@dimen/textsize_description"
+        android:textStyle="italic"
+        android:textColor="@color/red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.982"
+        />
+
+
+    <TextView
+        android:id="@+id/varmrätt1_beskrivning"
+        android:layout_width="@dimen/dimensions_width_images"
+        android:layout_height="@dimen/dimensions_height_desciption"
+        android:text="@string/varmrätt1_beskrivning"
+        android:textColor="@color/red"
+        android:textSize="@dimen/textsize_description"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.419" />
+
+    <TextView
+        android:id="@+id/varmrätt2_beskrivning"
+        android:layout_width="@dimen/dimensions_width_images"
+        android:layout_height="@dimen/dimensions_height_desciption"
+        android:text="@string/varmrätt2_beskrivning"
+        android:textColor="@color/red"
+        android:textSize="@dimen/textsize_description"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.691" />
+
+
+    <TextView
+        android:id="@+id/varmrätt3_beskrivning"
+        android:layout_width="@dimen/dimensions_width_images"
+        android:layout_height="@dimen/dimensions_height_desciption"
+        android:text="@string/varmrätt3_beskrivning"
+        android:textColor="@color/red"
+        android:textSize="@dimen/textsize_description"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.958" />
+
+    <TextView
+        android:id="@+id/efterrätt1_beskrivning"
+        android:layout_width="@dimen/dimensions_width_images"
+        android:layout_height="@dimen/dimensions_height_desciption"
+        android:text="@string/efterrätt1_beskrivning"
+        android:textColor="@color/red"
+        android:textSize="@dimen/textsize_description"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.895"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.429" />
+
+    <TextView
+        android:id="@+id/efterrätt2_beskrivning"
+        android:layout_width="@dimen/dimensions_width_images"
+        android:layout_height="@dimen/dimensions_height_desciption"
+        android:text="@string/efterrätt2_beskrivning"
+        android:textColor="@color/red"
+        android:textSize="@dimen/textsize_description"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.882"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.695" />
+
+    <TextView
+        android:id="@+id/efterrätt3_beskrivning"
+        android:layout_width="@dimen/dimensions_width_images"
+        android:layout_height="@dimen/dimensions_height_desciption"
+        android:text="@string/efterrätt3_beskrivning"
+        android:textColor="@color/red"
+        android:textSize="@dimen/textsize_description"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.882"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.977" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+

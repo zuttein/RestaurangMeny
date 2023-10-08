@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">RestaurangMeny</string>
+    <string name="restaurang_namn">Restaurang Husman\n</string>
+    <string name="förätt_btn">Förätter</string>
+    <string name="varmrätt_btn">Varmrätter</string>
+    <string name="efterrätt_btn">Efterätter</string>
+    <string name="förätt1_namn">Toast Skagen\n</string>
+    <string name="förätt2_namn">Svampsoppa\n</string>
+    <string name="förätt3_namn">Råraka\n</string>
+    <string name="varmrätt1_namn">Köttbullar</string>
+    <string name="varmrätt2_namn">Bakad röding\n</string>
+    <string name="varmrätt3_namn">Wallenbergare</string>
+    <string name="efterrätt1_namn">Pannacotta</string>
+    <string name="efterrätt2_namn">Äppelpaj</string>
+    <string name="efterätt3_namn">Marrängsviss</string>
+    <string name="förätt1_beskrivning">Klassisk Skagen med citron och en klick löjrom</string>
+    <string name="varmrätt1_beskrivning">Köttbullar med potatispuré och brunsås\n</string>
+    <string name="efterrätt1_beskrivning">Pannacotta med färska bär</string>
+    <string name="förätt2_beskrivning">Svampsoppa toppat med jordärtskockskrisp</string>
+    <string name="förätt3_beskrivning">Råraka med löjrom, gräddfil och variant på lök\n</string>
+    <string name="varmrätt2_beskrivning">Bakad röding med en sandefjordsås</string>
+    <string name="varmrätt3_beskrivning">Klassisk Wallenbergare med rårörda lingon</string>
+    <string name="efterrätt2_beskrivning">Äppelpaj med vaniljsås</string>
+    <string name="efterrätt3_beskrivning">Marrängsviss med färska jordgubbar</string>
+
+</resources>
